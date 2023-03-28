@@ -53,7 +53,7 @@ export const fetchCartData = () => {
             const itemsInCart = await fetchCart();
             dispatch(cartAction.replaceCart({
                 cartItems : itemsInCart.cartItems || [],
-                totalQuantity : itemsInCart.totalQuantity || 0
+                totalQuantity : itemsInCart.totalQuantity
             }));
         }
         catch(error){
