@@ -29,6 +29,7 @@ const Products = (props) => {
   return (
     <section className={classes.products}>
       <h2>Buy your favorite products</h2>
+      <h4>you can click on "Add to cart" to buy products!!!</h4>
       <ul>
         {DUMMY_PRODUCTS.map((prod) => (
             <ProductItem
